@@ -1,0 +1,33 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #2b3035;
+    border-color: #495057;
+}
+
+[data-bs-theme="dark"] .border-danger {
+    border-left: 4px solid #dc3545 !important;
+}
+
+[data-bs-theme="dark"] .border-warning {
+    border-left: 4px solid #ffc107 !important;
+}
+
+[data-bs-theme="light"] .border-danger {
+    border-left: 4px solid #dc3545 !important;
+}
+
+[data-bs-theme="light"] .border-warning {
+    border-left: 4px solid #ffc107 !important;
+}
